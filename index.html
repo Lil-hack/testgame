@@ -114,18 +114,18 @@
     </div>
 </div>
 
-<script src="./static/site/Build/testgame.loader.js"></script>
+<script src="./static/site/Build/site.loader.js"></script>
 <script>
     var end=0;
     var endSend=0;
       var inst;
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "./static/site/Build/testgame.data",
-        frameworkUrl: "./static/site/Build/testgame.framework.js?v=1.0.0.53",
-        codeUrl: "./static/site/Build/testgame.wasm",
+        dataUrl: "./static/site/Build/site.data",
+        frameworkUrl: "./static/site/Build/site.framework.js?v=1.0.0.53",
+        codeUrl: "./static/site/Build/site.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "testgame",
+        productName: "site",
         productVersion: "2.0",
       },(progress) => {
 <!--      document.getElementById("info").innerHTML =  progress;-->
