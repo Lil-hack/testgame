@@ -20,7 +20,15 @@
     <link rel="stylesheet" href="./static/site/css/index.Bw5XmvsK.css">
 
 
-    </script>
+    <script> if (window.Telegram && Telegram.WebApp.isExpanded) {
+    // Приложение уже в полноэкранном режиме
+} else if (window.Telegram && Telegram.WebApp.expand) {
+    Telegram.WebApp.expand(); // Запросить полноэкранный режим
+}
+Telegram.WebApp.onEvent('viewportChanged', () => {
+    console.log('Размер экрана обновлён:', Telegram.WebApp.viewportHeight);
+});
+</script>
 
 
 
