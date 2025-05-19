@@ -131,6 +131,10 @@ Telegram.WebApp.onEvent('viewportChanged', () => {
     var endSend=0;
       var inst;
       createUnityInstance(document.querySelector("#unity-canvas"), {
+<!--       dataUrl: "https://storage.googleapis.com/unity-play-prd-resource-bucket/game-builds/a21f5de7-0aca-488f-aec0-e90e9e4c1953/game.data.gz?GoogleAccessId=unity-play-prd-api-sa%40unity-play-web-site-prd.iam.gserviceaccount.com&Expires=1746586833&Signature=CsjDlIOJaclkh6%2FAdXcaKVJnhxKouK7TURxPwlgyu8ne%2BzbDWKx9u0uLmL0J8f88Mx7AkVAEojFLPqlczGPR36lb3NyeGN%2Fju7UeoeVxFHALGK1Wqs0jNG%2BvM9wVU1uPna19lO2RojJNw%2BXkMZeBssSasw8bGakfFr0ZIlT51%2F50uq9T6enDj9Afg2Iv%2FK%2FbiZPza8qbEpZW8b8WidnvYpkMUIJeJ%2FAIBvfDbivGKiT58WCtFHrvqS5TE7SsgHVAphlwDgojETrth%2FQThrrLOnBefMikGvV05WMM4iRMSrYMaWfg0M0QnpQBH0Su%2BXsSV4zJ8MZj2xRo%2FtLz3rnjCw%3D%3D",-->
+<!--          frameworkUrl: "https://storage.googleapis.com/unity-play-prd-resource-bucket/game-builds/a21f5de7-0aca-488f-aec0-e90e9e4c1953/framework.js.gz?GoogleAccessId=unity-play-prd-api-sa%40unity-play-web-site-prd.iam.gserviceaccount.com&Expires=1746586833&Signature=df2mffTwl2LGLkQ031Y6j0%2BRGaMcgLobPBYfn1ymPxehJzBOU1Ns6ottmKVElaZuPvBth11HiucwIpQWYhwaFVNn%2FZNbmguI%2BggsMoLfK4Y5Ef1O4IwJ9dHj6PxB8iITMmh76o2Bcq6o0PLsbhb9Xc2kSh9Q5QDksjj90u1z1xesJICYdVV72QpawL0lso3dEiyLbdwlZxvaxme65%2FzKJqJc2zXEJIpohtOsNCq02ornI%2B4HzqqyH75sN13%2FNmj9vUynRFR0Qqa%2FOUAroGVyFlBV7t2iC8aWA2kp3dSmI%2FCph%2F1ZDV09FhihFjIX51Dp65nZLwsO2k6HeOM6p6P3sg%3D%3D",-->
+<!--          codeUrl: "https://storage.googleapis.com/unity-play-prd-resource-bucket/game-builds/a21f5de7-0aca-488f-aec0-e90e9e4c1953/game.wasm.gz?GoogleAccessId=unity-play-prd-api-sa%40unity-play-web-site-prd.iam.gserviceaccount.com&Expires=1746586833&Signature=M%2FOIXEgETZDOyKQWcwjE9twlmgShXdAhj4VHO0dmPGrZ0ZB79l%2FTI4tc8KSUi7I2m8%2BGXSdX6ACYUsa7uwJhIesD23FOCIHHbOKX9nPc%2B%2BvKJgqdQ7rbEJ%2FK3fsfYXC19tahsOnJDr625Usnme3ado%2F9tPeqnYkyNsAMEDnybBpfmI1yy58J8HaymAA5pVjYyWb%2Bo8%2FFVl8bda3eOp8tUlL0YH4HhQX0Q2rdVLtt0iaW4%2Fow8dN7dgYekdhu6w2h4KGr0lF1ebR8lXHIj%2Bi%2FmEFipcoEQVo2JSMKILvtFZyW9cvlTy%2BCY7rTqX9ZYoiEw%2F6Yjb9KvyWDpyKNY%2BWgzQ%3D%3D",-->
+
         dataUrl: "./static/site/Build/site.data",
         frameworkUrl: "./static/site/Build/site.framework.js?v=1.0.0.56",
         codeUrl: "./static/site/Build/site.wasm",
@@ -163,7 +167,7 @@ window.Telegram.WebApp.expand();
 window.Telegram.WebApp.setHeaderColor ('#1c1f24');
 window.Telegram.WebApp.setBackgroundColor  ('#1c1f24');
 const canvas = document.getElementById("unity-canvas");
-canvas.style = `display: none;width: ${window.innerWidth}px; height: ${window.innerHeight}px;`;
+canvas.style = `display: none;width: 100%; height: 100%;`;
 function myFunction() {
 
  canvas.style = `width: ${window.innerWidth}px; height: ${Telegram.WebApp.viewportStableHeight}px;`;
